@@ -20,7 +20,7 @@ def pr(msg, tempo):
         sys.stdout.write(f'{i}')
         sys.stdout.flush()
         sleep(tempo)
-os.system('cls')
+os.system('clear')
 print('''
 
 
