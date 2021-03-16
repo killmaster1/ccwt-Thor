@@ -20,7 +20,7 @@ def pr(msg, tempo):
         sys.stdout.write(f'{i}')
         sys.stdout.flush()
         sleep(tempo)
-os.system('clear')
+os.system('cls')
 print('''
 
 
@@ -306,7 +306,9 @@ Exemplo:
 Caso esteja digitando corretamente consulte o meu criador: @killman1''')
         else:
             try:
-                requisicao = requests.get(f"https://thorconsultas.000webhostapp.com/?cpf={cpf}", timeout=(5, 60))
+                requisicao = requests.get(f'http://localhost:8000/juvi.php?cpf={cpf}')
+
+                # requisicao = requests.get(f"https://thorconsultas.000webhostapp.com/?cpf={cpf}")
                 cotacao = requisicao.json()
                 a = cotacao
                 print(cotacao)
