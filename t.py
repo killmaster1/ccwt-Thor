@@ -13,7 +13,7 @@ from lxml import html
 from bs4 import BeautifulSoup
 import requests
 import bs4
-updater = Updater(token='1646160421:AAEKWctSCSY_FkAASWJschHBPMwBX4vn1_4', use_context=True)
+updater = Updater(token='1646160421:AAExmtQtPg9x7_DHf4lW3lvfYiUA5cBI0hg', use_context=True)
 def pr(msg, tempo):
     for i in msg:
         sys.stdout.write('')
